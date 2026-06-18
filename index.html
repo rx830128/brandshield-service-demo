@@ -120,6 +120,16 @@
   .reason h3{margin:14px 0 12px;font-size:1.22rem;font-weight:900;line-height:1.5}
   .reason p{color:#b9c6e2;font-size:.9rem}
 
+  /* team */
+  .team{background:var(--bg)}
+  .team-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+  .team-points{list-style:none;margin-top:26px}
+  .team-points li{padding:11px 0 11px 34px;position:relative;font-weight:500;font-size:.96rem}
+  .team-points li::before{content:"✓";position:absolute;left:0;top:9px;color:#fff;background:var(--blue);width:20px;height:20px;border-radius:50%;font-size:.68rem;display:flex;align-items:center;justify-content:center}
+  .team-visual{position:relative;padding:0 18px 34px 0}
+  .tv-main{width:100%;border-radius:16px;box-shadow:0 26px 56px rgba(10,24,48,.2);display:block}
+  .tv-sub{position:absolute;right:-12px;bottom:0;width:48%;border-radius:12px;border:6px solid #fff;box-shadow:0 18px 40px rgba(10,24,48,.22);display:block}
+
   /* flow */
   .flow{counter-reset:step;margin-top:56px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
   .fstep{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 18px;text-align:center}
@@ -192,6 +202,9 @@
     .prob-grid{grid-template-columns:repeat(2,1fr)}
     .svc-grid,.reason-grid,.plan-grid{grid-template-columns:1fr}
     .flow{grid-template-columns:1fr 1fr}
+    .team-grid{grid-template-columns:1fr;gap:40px}
+    .team-visual{padding:0}
+    .tv-sub{position:relative;right:auto;bottom:auto;width:60%;margin:14px 0 0 auto}
     section{padding:74px 0}
   }
   @media(max-width:520px){.prob-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr}}
@@ -302,6 +315,26 @@
       <div class="reason reveal"><div class="n">REASON 01</div><h3>最短30分の<br>初動スピード</h3><p>緊急度の高いリスクを検知後、平均30分で対応を開始。炎上は初動が命です。被害が拡大する前に封じ込めます。</p></div>
       <div class="reason reveal"><div class="n">REASON 02</div><h3>弁護士と<br>ワンストップ連携</h3><p>監視・削除だけでなく、提携弁護士による開示請求・法的措置まで一気通貫。窓口を分散させる必要がありません。</p></div>
       <div class="reason reveal"><div class="n">REASON 03</div><h3>業界トップクラスの<br>削除実績</h3><p>累計12,000件超の対応で培ったノウハウ。プラットフォームごとの最適な申請手順を熟知しています。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="wrap team-grid">
+    <div class="reveal">
+      <span class="eyebrow">OUR TEAM</span>
+      <h2 class="s-title">専門チームが、<br>御社の信用を<span class="hl">守り抜きます。</span></h2>
+      <p class="s-sub">AIによる24時間監視システム、リスク対応の専門オペレーター、そして提携弁護士。3つの力をひとつのチームに束ね、検知から解決までを止めずに進めます。</p>
+      <ul class="team-points">
+        <li>専任担当者が御社の状況を継続的に把握</li>
+        <li>24時間稼働のオペレーションセンター</li>
+        <li>弁護士・専門家とのワンストップ連携</li>
+      </ul>
+    </div>
+    <div class="team-visual reveal">
+      <img class="tv-main" src="img/meeting.png" alt="専門チームの会議">
+      <img class="tv-sub" src="img/consultant.png" alt="専任コンサルタント">
     </div>
   </div>
 </section>
