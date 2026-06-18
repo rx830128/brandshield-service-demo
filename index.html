@@ -48,8 +48,10 @@
 
   /* hero */
   .hero{position:relative;color:#fff;padding:170px 0 120px;
-    background:radial-gradient(900px 600px at 80% -10%,rgba(47,107,255,.35),transparent 60%),
-      radial-gradient(700px 500px at 0% 110%,rgba(39,211,196,.18),transparent 55%),
+    background:
+      radial-gradient(700px 500px at 0% 110%,rgba(39,211,196,.16),transparent 55%),
+      linear-gradient(100deg,rgba(8,18,36,.97) 26%,rgba(10,24,48,.62) 60%,rgba(10,24,48,.32) 100%),
+      url('img/shield_hero.png') right center / cover,
       linear-gradient(160deg,#0a1830 0%,#0f2547 55%,#0a1830 100%);
     overflow:hidden}
   .hero::before{content:"";position:absolute;inset:0;
@@ -164,9 +166,17 @@
   .qa[open] summary::after{transform:rotate(45deg)}
   .qa .ans{padding:0 26px 24px;color:var(--gray);font-size:.92rem}
 
+  /* watch band */
+  .watch{position:relative;padding:132px 0;color:#fff;text-align:center;
+    background:linear-gradient(rgba(8,18,36,.84),rgba(8,18,36,.9)),url('img/monitoring.png') center/cover fixed}
+  .watch .eyebrow{color:var(--cyan)}
+  .watch h2{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.55}
+  .watch h2 .hl{color:var(--cyan)}
+  .watch p{margin:22px auto 0;max-width:640px;color:#c5d2ec;font-size:1rem}
+
   /* cta band */
   .cta{color:#fff;text-align:center;
-    background:radial-gradient(800px 400px at 50% 0%,rgba(47,107,255,.4),transparent 60%),linear-gradient(160deg,#0a1830,#13315c)}
+    background:linear-gradient(rgba(8,18,36,.82),rgba(13,40,80,.86)),url('img/protect.png') center/cover}
   .cta h2{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.5}
   .cta p{margin:22px auto 36px;color:#c5d2ec;max-width:620px}
   .cta .hero-actions{justify-content:center}
@@ -202,6 +212,7 @@
     .prob-grid{grid-template-columns:repeat(2,1fr)}
     .svc-grid,.reason-grid,.plan-grid{grid-template-columns:1fr}
     .flow{grid-template-columns:1fr 1fr}
+    .watch{background-attachment:scroll}
     .team-grid{grid-template-columns:1fr;gap:40px}
     .team-visual{padding:0}
     .tv-sub{position:relative;right:auto;bottom:auto;width:60%;margin:14px 0 0 auto}
@@ -265,6 +276,15 @@
       <div class="prob reveal"><div class="ico">🔍</div><h3>検索サジェスト汚染</h3><p>社名検索で「ブラック」「詐欺」等のネガティブワードが表示される。</p></div>
       <div class="prob reveal"><div class="ico">🎭</div><h3>なりすまし・無断利用</h3><p>偽アカウントやロゴ・画像の無断使用で、顧客が被害に遭っている。</p></div>
     </div>
+  </div>
+</section>
+
+<!-- WATCH BAND -->
+<section class="watch" id="watch">
+  <div class="wrap reveal">
+    <span class="eyebrow">24 / 7 MONITORING</span>
+    <h2>今この瞬間も、<br><span class="hl">御社のブランド</span>を見張っています。</h2>
+    <p>AIと専門オペレーターが24時間365日体制で、検索・SNS・口コミ・掲示板のあらゆる兆候を監視。リスクの芽は、大きくなる前に摘み取ります。</p>
   </div>
 </section>
 
